@@ -28,6 +28,39 @@
   color: #61dafb;
 }
 
+.inputAndData {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  height: 20px;
+  width: 300px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 5px;
+  border: thin solid grey;
+}
+
+.inputForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dispData {
+  text-align: left;
+}
+
+.dispData h3 {
+  text-align: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
