@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import FormData from "./FormData";
 
-const FormInput = props => {
+const FormInput = () => {
     const [firstName, setFirstName] = useState("");
     const [firstNameError, setFirstNameError] = useState("");
     const [lastName, setLastName] = useState("");
@@ -88,7 +88,7 @@ const FormInput = props => {
                 </div>
                     {
                         firstNameError ?
-                        <p> {firstNameError} </p> :
+                        <p style={{color:'red'}}> {firstNameError} </p> :
                         ''
                     }
                 <div className="inputDiv">
@@ -97,7 +97,7 @@ const FormInput = props => {
                 </div>
                     {
                         lastNameError 
-                        ? <p> {lastNameError} </p> 
+                        ? <p style={{color:'red'}}> {lastNameError} </p> 
                         : ''
                     }
                 <div className="inputDiv">
@@ -106,7 +106,7 @@ const FormInput = props => {
                 </div>
                     {
                         emailError ?
-                        <p> {emailError} </p> :
+                        <p style={{color:'red'}}> {emailError} </p> :
                         ''
                     }
                 <div className="inputDiv">
@@ -115,7 +115,7 @@ const FormInput = props => {
                 </div>
                     {
                         passwordError ?
-                        <p> {passwordError} </p> :
+                        <p style={{color:'red'}}> {passwordError} </p> :
                         ''
                     }
                 <div className="inputDiv">
@@ -124,7 +124,7 @@ const FormInput = props => {
                 </div>
                     {
                         confirmPasswordError ?
-                        <p> {confirmPasswordError} </p> :
+                        <p style={{color:'red'}}> {confirmPasswordError} </p> :
                         ''
                     }
             </form>
